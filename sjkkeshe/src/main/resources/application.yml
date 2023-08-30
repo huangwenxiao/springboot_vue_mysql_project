@@ -1,0 +1,18 @@
+server:
+  port: 9090
+  #调整端口为9090
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mysql_keshe?serverGMTimezone=GMT%2b8
+    #??mysql???,设置北京时间
+    username: root
+    password: 123
+#    链接数据库
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
